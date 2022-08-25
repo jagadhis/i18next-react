@@ -1,15 +1,18 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+const Nav = () => {
+  const { t } = useTranslation();
 
-const Nav = (props) => {
-    const {t} = useTranslation();
-    return (
-        <div>
-            <link to="/">{t("Home")}</link>
-            <link to="/">{t("Next Page")}</link>
-        </div>
-    );
+  return (
+    <header className='nav'>
+      <div>i18n React Demo</div>
+      <div>
+        <Link to="/">{t('home')}</Link>
+        <Link to="/page2">{t('page2')}</Link>
+      </div>
+    </header>
+  );
 }
 
 export default Nav;
