@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Nav from './Nav';
 import Home from './home';
-import Page from './page';
+import Page2 from './page';
 import Footer from './footer';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Nav />
       <Routes>
         <Route exact path='/' component={Home}/>
-        <Route path='/page' component={Page}/>
+        <Route path='/page' component={Page2}/>
       </Routes>
       <Footer />
     </div>
