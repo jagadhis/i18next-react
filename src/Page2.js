@@ -13,7 +13,7 @@ const Page = () => {
       
       <p>
         <Trans i18nKey='go-to-home' t={t}>
-          <Link to='/'>Hello</Link>
+          <Link to='/'>Go To Home</Link>
         </Trans>
       </p>
     </div>
