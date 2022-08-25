@@ -1,4 +1,6 @@
 {
     "Home":"Home",
-    "Next page":"Page 1"
+    "Next page":"Page 1",
+    "change-username": "Cambia tu nombre de usuario:",
+"submit": "Enviar"
 }
