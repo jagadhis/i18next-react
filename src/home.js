@@ -1,4 +1,4 @@
-import { withTranslation } from 'react-i18next';
+import { Trans,withTranslation } from 'react-i18next';
 
 class Home extends Component {
 
@@ -18,8 +18,11 @@ class Home extends Component {
           {t('submit')}
         </button>
       </div>
-
-      <p>Click <Link to='/page2'>here</Link> to go to page 2, {username}</p>
+      <Trans i18nKey='go-to-page2'>
+  <Link to='/page2'></Link>
+  {{username}}
+</Trans>
+      
     </div>
   );
 
