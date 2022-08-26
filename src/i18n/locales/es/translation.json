@@ -6,5 +6,7 @@
     "welcome": "Bienvenido {{username}}",
     "change-username": "Cambia tu nombre de usuario:",
     "submit": "Enviar",
-    "go-to-page2": "Haga clic <0>aquí</0> para ir a la página 2, {{username}}"
+    "go-to-page2": "Haga clic <0>aquí</0> para ir a la página 2, {{username}}",
+    "imagesTotal": "{{count}} image",
+  "imagesTotal_plural": "{{count}} images"
   }

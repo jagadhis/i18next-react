@@ -45,7 +45,11 @@ class Home extends Component {
             <Link to='/page2'></Link>
             {{username}}
           </Trans>
+         
         </p>
+        <h1>React i18next Plurals</h1>
+      <p>{t("imagesTotal", { count: 4 })}</p>
+      <p>{t("imagesTotal", { count: 6 })}</p>
       </div>
     );
   }
