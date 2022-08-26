@@ -30,26 +30,26 @@ class Home extends Component {
 
     return (
       <div className='body'>
-          <p>{t('welcome', {username: username})}</p>
+        <p>{t('welcome', { username: username })}</p>
 
-          <div>
-            <label>{t('change-username')}</label>
-            <input type='text' onChange={this.updateUsername.bind(this)} />
-            <button onClick={this.setUsername.bind(this)}>
-              {t('submit')}
-            </button>
-          </div>
+        <div>
+          <label>{t('change-username')}</label>
+          <input type='text' onChange={this.updateUsername.bind(this)} />
+          <button onClick={this.setUsername.bind(this)}>
+            {t('submit')}
+          </button>
+        </div>
 
         <p>
           <Trans i18nKey='go-to-page2'>
             <Link to='/page2'></Link>
-            {{username}}
+            {{ username }}
           </Trans>
-         
+
         </p>
         <h1>React i18next Plurals</h1>
-      <p>{t("imagesTotal", { count: 4 })}</p>
-      <p>{t("imagesTotal", { count: 6 })}</p>
+        <p>{t("imagesTotal", { count: 4 })}</p>
+        <p>{t("imagesTotal", { count: 6 })}</p>
       </div>
     );
   }
